@@ -8,4 +8,9 @@ class Post < ApplicationRecord
     validates :summary
     validates :impressions
   end
+
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to :genre
+
+  validates :genre_id, numericality: { other_than: 1 }
 end

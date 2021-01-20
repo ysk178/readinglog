@@ -16,7 +16,7 @@ has_many: comments
 | ----------- | ---------- | ------------------------------ |
 | title       | string     | null: false                    |
 | author      | string     |                                |
-| category_id | integer    | null: false                    |
+| genre_id    | integer    | null: false                    |
 | summary     | text       | null: false                    |
 | impressions | text       | null: false                    |
 | user        | references | null: false, foreign_key: true |

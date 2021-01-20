@@ -1,0 +1,32 @@
+<%= form_with(model: @post, local: true) do |f| %>
+  <div>
+  </div>
+
+  <div>
+    タイトル
+    <%= f.text_field :title %>
+  </div>
+
+  <div>
+    著者
+    <%= f.text_field :author %>
+  </div>
+
+  <div>
+    ジャンル
+  </div>
+
+  <div>
+    本の要約
+    <%= f.text_area :summary %>
+  </div>
+
+  <div>
+    感想
+    <%= f.text_area :impressions %>
+  </div>
+
+  <div class="actions new-form-btn">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+<% end %>
