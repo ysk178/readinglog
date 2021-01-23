@@ -1,2 +1,10 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<div class="contents row">
+  <% @posts.each do |post| %>
+    <div class="content_post" style="background-image: url(<%= post.image %>);">
+      <p><%= post.title %></p>
+      <span class="name">
+        <%= post.author %>
+      </span>
+    </div>
+  <% end %>
+</div>

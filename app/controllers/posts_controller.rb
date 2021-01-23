@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   def index
+    @posts = Post.all
   end
 
   def new
@@ -12,6 +13,6 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:title, :author, :genre_id, :summary, :impressions, :image)
+    params.require(:post).permit(:title, :author, :summary, :impressions, :image)
   end
 end
