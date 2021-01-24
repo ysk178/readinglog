@@ -6,6 +6,7 @@ class CreatePosts < ActiveRecord::Migration[6.0]
       t.text :summary, null: false
       t.text :impressions, null: false
       t.text :image
+      t.references :user, foreign_key: true
       t.timestamps
     end
   end
