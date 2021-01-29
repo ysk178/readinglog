@@ -1,0 +1,8 @@
+<%= form_with(model: post, local: true) do |form| %>
+  <%= form.text_field :title, placeholder: "Title" %>
+  <%= form.text_field :image, placeholder: "Image Url" %>
+  <%= form.text_field :author, placeholder: "Author" %>
+  <%= form.text_area :summary, placeholder: "Summary", rows: "10" %>
+  <%= form.text_area :impressions, placeholder: "Impressions", rows: "10" %>
+  <%= form.submit "SEND" %>
+<% end %>

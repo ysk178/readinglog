@@ -32,8 +32,8 @@ has_many: comments
 | Column      | Type       | Option                         |
 | ----------- | ---------- | ------------------------------ |
 | title       | string     | null: false                    |
-| author      | string     | null: false                               |
-| category_id | integer    | null: false                    |
+| author      | string     |                                |
+| genre_id    | integer    | null: false                    |
 | summary     | text       | null: false                    |
 | impressions | text       | null: false                    |
 | user        | references | null: false, foreign_key: true |
